@@ -1,4 +1,4 @@
-# Greek Bible Lexicon (GBL-EPV)
+# The Greek Bible English Lexicons (TGBEL-EPV)
 
 A Greek dictionary module for [theWord](https://www.theword.net/), keyed to Strong's numbers.
 
