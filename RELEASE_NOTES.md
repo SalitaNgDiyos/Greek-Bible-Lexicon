@@ -1,10 +1,11 @@
-GBL-EPV update (`2026-11-20_1410`):
+GBL-EPV update (`2026-11-20_1823`):
 
-- **Renamed module file** from `epv-thayer-kjv` to **`GBL-EPV`**.
-- **Deuterocanon expansion (`G13150–G15737`, `2,588` new entries):** Complete coverage of Greek Deuterocanonical vocabulary and proper names across the Apostoliki Diakonia (Orthodox), Brenton, Rahlfs, and Swete editions (`G13150–G15518` + `G15519–G15737`), with full LSJ articles, contextual proper-name descriptions from verse occurrences, and occurrence counts.
-- **Noun genders completed (`729` entries):** All nouns that previously lacked a grammatical gender are now classified (`noun feminine`, `noun masculine`, `noun neuter`, `noun indeclinable`, `noun masculine or feminine`) from LSJ articles and morphological agreement.
-- **Proper names sub-tagged (`1,964` entries):** All generic `proper name` entries are now sub-tagged into `proper name masculine` (1,099), `proper name location` (794), and `proper name feminine` (63) from BDB, ISBE, and verse context.
-- **Self-contained LSJ cross-references (`1,008` links / `850` target words):** All external `Liddell.dct` cross-reference targets have been copied into `GBL-EPV` and linked internally so every LSJ link works standalone without `Liddell.dct` installed.
-- **Appendix & lemma glosses:** Added parent short meanings for `G9423` (`Ορη`) and `G10991` (`Ηρων`) and updated `Start here` and `Appendix – Notes on this edition`.
+- **Link & XML cleanup across 342 topics (`0` broken links remaining):**
+  - Removed all **205** raw XML markers (`<checkingNeeded/>`, `<wrongReferenceRemoved/>`) leaked from source BDB text.
+  - Fixed **33** mis-assigned Bible links (e.g. `2Sam 72/89/122/132` → `Psalms`, Hebrew `Joel 4` → KJV `Joel 3`, `Ezra 12:33` → `Neh 12:33`, `1Chr 34:12` → `2Chr 34:12`, `Jude 9` → `Jude 1:9`) and unlinked **76** unresolvable/false-autodetect Bible references (plus 5 removed with `G8335`).
+  - Rewrote **30** legacy module links (`tw://bdb-thayer.dct?H...` → `tw://[strong]?t=H...`, `G5646`, `G5823`) and stripped **4** garbled/dead legacy links (`tw://AMBD?`, `tw://jb121?`).
+  - Stripped **7,374** external `perseus.tufts.edu` web hyperlink wrappers while preserving the Greek and citation text cleanly offline.
+- **Entry fixes:** Replaced mismatched BDB text in **`G8335` (`Αβι`)** (and its parent lemma gloss) and **`G9423` (`Ορη`)** with accurate contextual definitions.
+- **Includes all `2026-11-20_1410` updates:** `G13150–G15737` Deuterocanon expansion, `729` noun genders, `1,964` proper-name sub-tags, and `1,008` self-contained internal LSJ links.
 
-Unzip `GBL-EPV_2026-11-20_1410.dct.zip` and place `GBL-EPV_2026-11-20_1410.dct.twm` in your theWord `Modules` folder. Every change is listed in `change-logs/`.
+Unzip `GBL-EPV_2026-11-20_1823.dct.zip` and place `GBL-EPV_2026-11-20_1823.dct.twm` in your theWord `Modules` folder.
