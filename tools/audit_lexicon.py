@@ -91,7 +91,7 @@ def check_gill_markers(conn: sqlite3.Connection) -> list[tuple[int, str]]:
 
 def check_plain_definition(conn: sqlite3.Connection) -> list[tuple[int, str]]:
     hits: list[tuple[int, str]] = []
-    plain_re = re.compile(r"(?:^|[\r\n}\\; ])Definition:")
+    plain_re = re.compile(r"\{\\plain\\f0\\fs20\\b Definition:\}")
     strong_re = re.compile(r"^G(\d+)$", re.IGNORECASE)
     rows = conn.execute(
         "SELECT t.id, t.subject, c.data "
