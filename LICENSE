@@ -1,0 +1,22 @@
+# Licensing and Upstream Attribution
+
+## Original Compilation, Build, and Audit Scripts
+
+All original compilation, build, cleanup, and audit scripts in `tools/` (copyright © 2026 Edmund Paulino Valdez) are licensed under the **GNU Affero General Public License v3.0 or later (`AGPL-3.0-or-later`)**.
+
+See the full license text at gnu.org/licenses/agpl-3.0.html.
+
+## Incorporated Datasets & Upstream Licenses
+
+The `GBL-EPV` dictionary module (`.dct.twm`) compiles and cross-references multiple upstream lexical, biblical, and morphological datasets. Each incorporated dataset retains its own license terms and distribution restrictions:
+
+1. **Perseus Digital Library — Liddell-Scott-Jones (`LSJ`, 1940)** — Perseus Digital Library TEI XML via `Liddell.dct` (10,135+ `LSJ Definition:` articles). License: **CC BY-SA 3.0 US**.
+2. **SBL Greek New Testament (`SBLGNT`)** — Society of Biblical Literature and Logos Bible Software (2010), edited by Michael W. Holmes (`LogosBible/SBLGNT`). License: **CC BY 4.0**.
+3. **MorphGNT & Nestle 1904 Lemma List** — `morphgnt/sblgnt` (**CC BY-SA 3.0**) and `biblicalhumanities.org` Nestle 1904 lemma list (**CC0 1.0**).
+4. **CATSS LXX Morphology & `eliranwong/LXX-Rahlfs-1935`** — CATSS LXX Morphology (University of Pennsylvania), `lxxmorph-rc` module by Rúbio Terra, and 249 verses from `eliranwong/LXX-Rahlfs-1935`. License: **CC BY-NC-SA 4.0** / CCAT non-commercial user agreement (**non-commercial use only**).
+5. **Swete's Septuagint (`SweteLXX+`)** — Digital text from `eliranwong/LXX-Swete-1930` (**GPL-3.0**) and `sleeptillseven/LXX-Swete` (**CC BY-NC-SA 4.0**, **non-commercial use only**).
+6. **Public-Domain Historical Lexicons, Texts & Reference Works** — Thayer (1889), Online Bible / Larry Pierce (Strong's/Thayer introductory note & abridged Thayer/BDB outlines), Brown-Driver-Briggs (`uBDB`), ISBE (1915), McClintock & Strong, John Gill, Textus Receptus (`TRa`, Stephanus 1550 / Scrivener 1894), Robinson-Pierpont Byzantine Majority Text (2018), Brenton (`LXX Brenton+`), and `aruljohn/Bible-kjv`.
+
+## Derivative Distribution Notice
+
+Because the compiled `.dct.twm` module incorporates **CC BY-NC-SA 4.0** / CCAT non-commercial LXX-derived data, **GPL-3.0** Swete data, and **CC BY-SA 3.0** LSJ/MorphGNT data, any redistribution of the compiled module must preserve all upstream attributions, honor **NonCommercial** restrictions on the LXX-derived portions, and honor **ShareAlike** / **GPL-3.0** terms where applicable.
